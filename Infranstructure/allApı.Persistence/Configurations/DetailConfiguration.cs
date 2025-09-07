@@ -47,7 +47,7 @@ namespace allApı.Persistence.Configurations
                 CreatedDate = DateTime.Now,
                 IsDeleted = true,
             };
-            builder.HasData(detail1, detail2, detail3);
+           builder.HasData(detail1, detail2, detail3);
         }
     }
 }

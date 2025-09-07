@@ -40,7 +40,7 @@ namespace allApı.Persistence.Configurations
                 CreatedDate = DateTime.Now,
                 IsDeleted = false
             };
-            builder.HasData(product1, product2);
+           builder.HasData(product1, product2);
         }
     }
 }
