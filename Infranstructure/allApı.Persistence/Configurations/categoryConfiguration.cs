@@ -50,7 +50,7 @@ namespace allApı.Persistence.Configurations
 
             category parent2 = new category
             {
-                Id = 1,
+                Id = 4,
                 Name = "Kadın",
                 Priorty = 1,
                 ParentId = 2,
