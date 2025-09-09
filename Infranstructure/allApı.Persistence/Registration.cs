@@ -1,6 +1,8 @@
 ﻿using allApı.Application.Interfaces.Repositories;
+using allApı.Application.Interfaces.UnitOfWorks;
 using allApı.Persistence.Context;
 using allApı.Persistence.Repositories;
+using allApı.Persistence.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +32,8 @@ namespace allApı.Persistence
             // - Request bitince nesne bellekten atılır.
             services.AddScoped(typeof(IReadRepository<>), typeof(readRepository<>));
             services.AddScoped(typeof(IWriteRepository<>), typeof(writeRepository<>));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         }
     }
