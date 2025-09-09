@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\core\allApı.Application\allApı.Application.csproj" />
     <ProjectReference Include="..\..\core\allApı.Domain\allApı.Domain.csproj" />
   </ItemGroup>
 
